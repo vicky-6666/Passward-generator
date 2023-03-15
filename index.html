@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>password generator</title>
+    <!-- fontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- normalize css -->
+    <link
+      rel="stylesheet"
+      href="./styles/normalize.css"
+    />
+    <!-- custom css -->
+    <link
+      rel="stylesheet"
+      href="./styles/styles.css"
+    />
+  </head>
+  <body>
+    <h1>Password Generator In Js</h1>
+
+    <div class="container">
+      <form
+        action="#"
+        id="frm"
+      >
+        <div class="form-inputs">
+          <input
+            type="text"
+            class="output"
+            id="output"
+          />
+          <button
+            class="btn-copy"
+            id="btn-copy"
+          >
+            copy
+          </button>
+        </div>
+
+        <div class="form-inputs">
+          <label
+            for="pas-length"
+            class="password-label"
+            >Password length</label
+          >
+          <input
+            type="number"
+            class="pas-length"
+            id="length"
+            value="8"
+            min="6"
+          />
+        </div>
+
+        <div class="form-inputs">
+          <input
+            type="checkbox"
+            name=""
+            id="numbers"
+            checked
+            class="check-box"
+          />
+          <label for="">Number</label>
+        </div>
+
+        <div class="form-inputs">
+          <input
+            type="checkbox"
+            name=""
+            id="capital-letters"
+            class="check-box"
+          />
+          <label for="">Capital letters</label>
+        </div>
+
+        <div class="form-inputs">
+          <input
+            type="checkbox"
+            name=""
+            id="small-letters"
+            class="check-box"
+          />
+          <label for="">Small letters</label>
+        </div>
+
+        <div class="form-inputs">
+          <input
+            type="checkbox"
+            name=""
+            id="symbols"
+            class="check-box"
+          />
+          <label for="">Symbols</label>
+        </div>
+
+        <div class="form-inputs">
+          <button class="submit-btn">Generate Password</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- script js -->
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
